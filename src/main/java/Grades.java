@@ -9,7 +9,7 @@ public class Grades {
         }
 
         sum/= grades.length;
-        System.out.println(grades[sum]);
+        System.out.println(sum);
         }
 
         public int[] grades;
