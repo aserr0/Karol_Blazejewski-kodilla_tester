@@ -1,10 +1,6 @@
 public class User {
 
 
-    public int getAge() {
-        return age;
-    }
-
     public int length;
     public String name;
     public int age;
@@ -15,7 +11,6 @@ public class User {
 
     }
 
-    static int getTotalAge = 180;
     public static void main(String[] args) {
 
         String[] User = new String[6];
@@ -29,6 +24,8 @@ public class User {
         User[] users = {anna, betty, carl, david, eva, frankie};
 
         int result = 0;
+        float totalAge = 187;
+
         for (int i = 0; i < 1; i++) {
             result = Integer.parseInt(String.valueOf(result + i));
             System.out.println(users[0].name + " age" + " " + users[0].age);
@@ -38,8 +35,9 @@ public class User {
             System.out.println(users[4].name + " age" + " " + users[4].age);
             System.out.println(users[5].name + " age" + " " + users[5].age);
             System.out.println(users[0].age + users[1].age + users[2].age + users[3].age + users[4].age + users[5].age + " " + "total age of users ");
-            getTotalAge/= users.length;
-            System.out.println(i);
+
+            totalAge/= users.length;
+            System.out.println("avg total age of all users" + " " + totalAge);
         }
     }
 
