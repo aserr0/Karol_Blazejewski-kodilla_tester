@@ -1,6 +1,10 @@
 public class User {
 
 
+    public int getAge() {
+        return age;
+    }
+
     public int length;
     public String name;
     public int age;
@@ -8,8 +12,10 @@ public class User {
     public User(String name, int age) {
         this.name = name;
         this.age = age;
+
     }
 
+    static int getTotalAge = 180;
     public static void main(String[] args) {
 
         String[] User = new String[6];
@@ -31,6 +37,9 @@ public class User {
             System.out.println(users[3].name + " age" + " " + users[3].age);
             System.out.println(users[4].name + " age" + " " + users[4].age);
             System.out.println(users[5].name + " age" + " " + users[5].age);
+            System.out.println(users[0].age + users[1].age + users[2].age + users[3].age + users[4].age + users[5].age + " " + "total age of users ");
+            getTotalAge/= users.length;
+            System.out.println(i);
         }
     }
 
