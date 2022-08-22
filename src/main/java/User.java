@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class User {
 
 
@@ -12,6 +14,9 @@ public class User {
     }
 
     public static void main(String[] args) {
+
+        Random random = new Random();
+        int randomNumbers = random.nextInt(5000) + 1;
 
         String[] User = new String[6];
         User anna = new User("Anna", 20);
@@ -36,9 +41,18 @@ public class User {
             System.out.println(users[5].name + " age" + " " + users[5].age);
             System.out.println(users[0].age + users[1].age + users[2].age + users[3].age + users[4].age + users[5].age + " " + "total age of users ");
 
-            totalAge/= users.length;
+            totalAge /= users.length;
             System.out.println("avg total age of all users" + " " + totalAge);
+
+            for (i = 0; i <= 30; i++) {
+                boolean x = randomNumbers >= 30;
+                {
+                    System.out.println("number is lower than 30" + " " + x);
+                    System.out.println(i);
+                }
+
+
+            }
         }
     }
-
 }
