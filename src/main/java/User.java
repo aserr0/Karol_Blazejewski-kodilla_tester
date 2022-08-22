@@ -4,13 +4,10 @@ public class User {
     public int length;
     public String name;
     public int age;
-    public User(String name, int age, int length) {
-        this.name = name;
-        this.age = age;
-        this.length = length;
-    }
 
     public User(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
     public static void main(String[] args) {
@@ -26,9 +23,14 @@ public class User {
         User[] users = {anna, betty, carl, david, eva, frankie};
 
         int result = 0;
-        for (int i = 0; i < User.length; i++) {
+        for (int i = 0; i < 1; i++) {
             result = Integer.parseInt(String.valueOf(result + i));
-        System.out.println(users[2]);
+            System.out.println(users[0].name + " age" + " " + users[0].age);
+            System.out.println(users[1].name + " age" + " " + users[1].age);
+            System.out.println(users[2].name + " age" + " " + users[2].age);
+            System.out.println(users[3].name + " age" + " " + users[3].age);
+            System.out.println(users[4].name + " age" + " " + users[4].age);
+            System.out.println(users[5].name + " age" + " " + users[5].age);
         }
     }
 
