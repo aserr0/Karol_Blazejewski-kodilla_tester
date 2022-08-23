@@ -44,15 +44,21 @@ public class User {
             totalAge /= users.length;
             System.out.println("avg total age of all users" + " " + totalAge);
 
-            for (i = 0; i <= 30; i++) {
-                boolean x = randomNumbers >= 30;
+            for (i = 0; i <= 0; i++) {
+                int x = randomNumbers();
                 {
-                    System.out.println("number is lower than 30" + " " + x);
-                    System.out.println(i);
+                    System.out.println(randomNumbers);
                 }
-
-
+                if (i <= 30) {
+                    System.out.println("number is lower than 30" + " " + x);
+                } else {
+                    System.out.println("number is higher than 30" + " " + x);
+                }
             }
         }
+    }
+
+    private static int randomNumbers() {
+        return 0;
     }
 }
