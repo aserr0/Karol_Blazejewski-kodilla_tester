@@ -16,8 +16,8 @@ public class User {
     public static void main(String[] args) {
 
         Random random = new Random();
-        int randomNumbers = random.nextInt(5000) + 1;
-
+        int randomNumbersX = random.nextInt(5000) + 1;
+        int randomNumbersY = random.nextInt(5000) + 1;
         String[] User = new String[6];
         User anna = new User("Anna", 20);
         User betty = new User("Betty", 33);
@@ -45,20 +45,29 @@ public class User {
             System.out.println("avg total age of all users" + " " + totalAge);
 
             for (i = 0; i <= 0; i++) {
-                int x = randomNumbers();
-                {
-                    System.out.println(randomNumbers);
-                }
-                if (i <= 30) {
-                    System.out.println("number is lower than 30" + " " + x);
-                } else {
-                    System.out.println("number is higher than 30" + " " + x);
-                }
+
+                System.out.println(randomNumbersX);
+            }
+
+            if (randomNumbersX <= 30) {
+                System.out.println("number is lower than 30");
+            } else {
+                System.out.println("number is higher than 30");
+
+            }
+            for (i = 0; i <= 0; i++) {
+
+                System.out.println(randomNumbersY);
+            }
+
+            if (randomNumbersY <= 30) {
+                System.out.println("number is lower than 30");
+            } else {
+                System.out.println("number is higher than 30");
+
             }
         }
-    }
 
-    private static int randomNumbers() {
-        return 0;
+
     }
 }
